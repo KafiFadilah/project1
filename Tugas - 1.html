@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <p id="p">Ini adalah paragraf</p>
+        <button onclick="myDelete()">Hapus</button>
+    </div>
+    
+        <script>
+            // document.getElementById("container").innerHTML = "Hello World";
+            //  document.getElementById("container").innerHTML = "<h1>judul</h1>";
+            //   document.getElementById("container").innerHTML = "<h1>Judul Baru</h1>";
+            
+              function myDelete() {
+                 document.getElementById("p").innerHTML = "";
+             }
+        </script>
+        
+</body>
+</html>

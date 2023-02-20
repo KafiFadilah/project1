@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/gridjs/dist/gridjs.production.min.js"></script>
+    <link href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id ="table-gridjs"></div>
+    <script>
+        new gridjs.Grid({
+            columns: ["Nama","Merk","Tahun Rilis","Jenis Bensin"],
+            data: [
+                ["Jazz","Honda","2002","Gasoline"],
+                ["Yaris","Toyota","2005","Gasoline"],
+                ["Swift","Suzuki","2010","Gasoline"],
+                ["Wagon R","Suzuki","2003","Gasoline"],
+                ["Brio","Honda","2012","Gasoline"],
+                ["Baleno","Suzuki","2015","Gasoline"],
+                ["Mirage","Mitsubishi","2013","Gasoline"],
+                ["i20","Hyundai","2008","Gasoline"],
+                ["Picanto","Kia","2011","Gasoline"],
+                ["Ecosport","Ford","2014","Gasoline"]
+            ]
+        }).render(document.getElementById("table-gridjs"));
+    </script>
+
+</body>
+</html>
